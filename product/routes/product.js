@@ -1,6 +1,6 @@
 const Router = require("express").Router;
 const router = new Router();
-const Product = require("../models/Product");
+const Product = require("../models/product");
 const amqp = require("amqplib");
 
 let order, channel, connection;
