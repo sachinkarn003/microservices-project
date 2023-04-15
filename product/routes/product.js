@@ -6,6 +6,7 @@ const amqp = require("amqplib");
 let order, channel, connection;
 
 // Connect to RabbitMQ
+//https://scanairobi.hashnode.dev/microservices-101-with-nodejs-and-rabbitmq read this blog
 async function connectToRabbitMQ() {
   const amqpServer = "amqp://guest:guest@localhost:5673";
   connection = await amqp.connect(amqpServer);
